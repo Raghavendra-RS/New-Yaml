@@ -38,10 +38,3 @@ steps:
     ArtifactName: 'New Yaml Content'
     publishLocation: 'Container'
 
-
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'push'
-    packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
-    nuGetFeedType: 'internal'
-    publishVstsFeed: 'f1faeff4-b63a-449d-a5c1-487791704f73/e8f44153-95aa-4b65-94ce-5679116cb76e'
