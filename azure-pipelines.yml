@@ -42,6 +42,7 @@ steps:
   inputs:
     command: 'pack'
     packagesToPack: '**/*.csproj'
+    packDestination: '$(Build.SourcesDirectory)'
     versioningScheme: 'off'
 
 - task: NuGetCommand@2
