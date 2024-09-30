@@ -38,11 +38,6 @@ steps:
     ArtifactName: 'New Yaml Content'
     publishLocation: 'Container'
 
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'pack'
-    packagesToPack: 'C:\Users\SandeepD\Desktop\Sandeep\New Yaml'
-    versioningScheme: 'off'
 
 - task: DotNetCoreCLI@2
   inputs:
